@@ -9,5 +9,5 @@ Part 1:
 
 I start by telling Python to read the file.txt, then I use strip() to clean them to manipulate easier (Unwanted spaces, and all that) and set up our position as 50, x = 50 Then using index, I identfy the first index [0] of the string is an "R" or an "L" : if an L, I return x = 50 - number in the string and if it's an R, I return x = 50 + number. But there's one more problem : I forgot the loop rule as in L1 from 0 to 99 and R1 from 99 to 0, so I use modulo 100 to loop them (we need to find the actual position here as in (whatever value we have over 99, actual value - 99 = position we need to be so the value we search for, and using modulo - a function built in python, send us back the rest which is the value we search for (ex : L68 with current position is 50, send us back with -18 for position so we go left 18 steps and land on 82 for value) Then whatever it reaches 0 I add 1 to the counter and return the final count.
 
-Part 2: Same rules, we now need to counter each time we pass by 0 which also needs a separate counter and sum of two counters gives us the password. So if I use sum(the current position + steps) and if sum > 99 alors counter + 1 et inverse si sum < 0 alors counter = 0
-
+Part 2: So for this part, we need to count each time that we pass our through 0. 
+- So I inscreased the step by adding 1 by 1 of them and whenever it lands on 0 I add it to the counter 
