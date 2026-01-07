@@ -14,4 +14,8 @@ with open ("id.txt", "r") as file:
                     second_half = s[midpoint:]
                     if first_half == second_half:
                         som += i
+                 elif len(s) % 2 != 0:
+                    som += 0
+                    if s == s[0] * len(s):
+                        som += i
     print(som)
