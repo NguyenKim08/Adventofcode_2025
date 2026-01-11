@@ -31,5 +31,6 @@ So to find the sequence of digits where it is repeated, in part one I find the m
 The question is how will I find the correct sequence that is repeating?
 I find no way than just keep on trying each combination of digits to find the correct sequence,
 So there is another way to compare the repetitions, it's when you observe a number : 121212, you can see that 12 is repeated 3 time so we can use this condition to check if an id is invalid or not. First we find the sequence and we check if the number of repeats * the sequence is equal or not to the string(original number), then we add this invalid id to the counter and return the counter's value.
-                                                                                                                                  
+
+Also a small side clairification, for the line for for chunk_len in range (1, (total_len // 2) + 1), seeing how range(a,b) usually works in Python where the built in included a but not b, I added 1 to widened the range of limit and seeing how the largest sequence is usually half of the string (11885 11885) I did total_len//2 to find the end limit of range.                                                                                                                                  
                                                                                                                                   
